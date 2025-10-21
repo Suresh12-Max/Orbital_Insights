@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Dashboard – Orbital Insights Ltd</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Load Chart.js before scripts.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+  <div class="header-container">
+    <img src="images/logo.png" alt="Orbital Insights Logo" class="header-logo">
+    <div class="header-text-overlay">
+      <h1>Orbital Insights Ltd</h1>
+      <p>Innovating Small Satellite Technology for Climate Research</p>
+    </div>
+  </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="company.html">Company</a>
+    <a href="competition.html">Competition</a>
+    <a href="target.html">Target & Scope</a>
+    <a href="analysis.html">Analysis</a>
+    <a href="dashboard.html" class="active">Data Dashboard</a>
+    <a href="news.html">News & Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Data Dashboard</h2>
+    <p>This dashboard shows simulated real-time telemetry updates from our orbital satellite systems.</p>
+
+    <div class="info-box">
+      <h4>Mission Overview</h4>
+      <ul>
+        <li>Orbit Altitude: <strong>~505 km (LEO)</strong></li>
+        <li>Battery Level: <strong>96%</strong></li>
+        <li>Downlink Speed: <strong>2.3 MB/s</strong></li>
+        <li>Last Update: <strong id="clock">--:--:--</strong></li>
+      </ul>
+    </div>
+
+    <h3>Live Telemetry Graph</h3>
+    <div class="info-box">
+      <canvas id="telemetryChart" width="900" height="380"></canvas>
+    </div>
+
+    <div class="info-box">
+      <h4>Explanation</h4>
+      <p>
+        This chart simulates live satellite telemetry readings, including temperature (°C) and altitude (km).
+        Data points are generated every few seconds to demonstrate how real-time satellite feeds can be
+        visualized for mission control or public dashboards.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Orbital Insights Ltd. All Rights Reserved. | <a href="company.html">Company details & introduction</a></p>
+  </footer>
+</body>
+</html>
